@@ -20,7 +20,7 @@ body{
     border-radius: 2rem;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
-button{
+#btn{
     margin: 1rem;
     padding: 1rem 3rem;
     font-size: 1.5rem;
@@ -43,5 +43,14 @@ input{
     border-radius: 1rem;
     outline: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.result{
+    position: absolute;
+    width:500px ;
+    padding: 2rem;
+    background-color: rgb(1, 34, 34);
+    color: cyan;
+    font-size: 1.5rem;
+    transform: scale(0);
 }
 
