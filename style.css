@@ -27,9 +27,12 @@ body{
     font-weight: bold;
     border: none;
     border-radius: 1rem ;
-    background-color: aqua;
-    color: white;
+    background-color: rgb(1, 109, 109);
+    color:whitesmoke;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#btn:hover{
+    background-color: rgb(8, 141, 97);
 }
 label{
     font-size: 1.6rem;
@@ -46,7 +49,7 @@ input{
 }
 .result{
     position: absolute;
-    width:500px ;
+    width:1000px ;
     padding: 2rem;
     background-color: rgb(1, 34, 34);
     color: cyan;
@@ -55,4 +58,15 @@ input{
     text-align: center;
     transform: scale(0);
 }
-
+.result button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: green;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0 10px black;
+}
+.result button:hover{
+    background-color: rgb(2, 175, 2);
+}

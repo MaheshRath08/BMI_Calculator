@@ -13,7 +13,7 @@ btnEl.addEventListener("click", (e)=>{
     console.log(classification)
     pop.style.transform = "scale(1)"
     pop.innerHTML = `
-    <h1>${classification}</h1><br><h2>Your BMI is:${bmi}</h2><br>
+    <h1>${classification}</h1><br><h2>Your BMI is: ${bmi}</h2><br>
     <button onclick="location.reload()"><i class="fa-solid fa-rotate"></i></button>`
     container.style.transform = "scale(0)"
 })
