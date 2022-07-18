@@ -8,26 +8,30 @@ btnEl.addEventListener("click", (e)=>{
     e.preventDefault()
     let w = parseFloat(weightEl.value)
     let h = parseFloat(heightEl.value)
-    let bmi = w/(h**2)
+    let bmi = (w/(h**2)).toFixed(2)
     let classification = BMIclassList(bmi)
-    console.log(classification)
-    pop.style.transform = "scale(1)"
-    pop.innerHTML = `
-    <h1>${classification}</h1><br><h2>Your BMI is: ${bmi}</h2><br>
-    <button onclick="location.reload()"><i class="fa-solid fa-rotate"></i></button>`
-    container.style.transform = "scale(0)"
+    if (isNaN(bmi)){
+        alert("Please type in proper numbers")
+        location.reload()
+    }else{
+        pop.style.transform = "scale(1)"
+        pop.innerHTML = `
+        <h1>${classification}</h1><br><h3>Your BMI is: ${bmi}</h3><br>
+        <button onclick="location.reload()"><i class="fa-solid fa-rotate"></i></button>`
+        container.style.transform = "scale(0)"
+    }
 })
 
 function BMIclassList(e){
     let message = "";
     if(e<18.5){
-        message = "under weight"
+        message = "UNDER-WEIGHT"
     }else if(e>18.5 && e<24.9){
-        message = "Normal"
+        message = "NORMAL"
     }else if(e>24.9 && e<29.9){
-        message = "over weight"
+        message = "OVER-WEIGHT"
     }else if(e>=30){
-        message = "obese"
+        message = "OBESE"
     }
     return message
 }
