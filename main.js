@@ -2,6 +2,7 @@ const weightEl = document.getElementById("weight")
 const heightEl = document.getElementById("height")
 const btnEl = document.getElementById("btn")
 const pop = document.getElementById("result")
+const container = document.querySelector(".container")
 
 btnEl.addEventListener("click", (e)=>{
     e.preventDefault()
@@ -10,9 +11,11 @@ btnEl.addEventListener("click", (e)=>{
     let bmi = w/(h**2)
     let classification = BMIclassList(bmi)
     console.log(classification)
+    pop.style.transform = "scale(1)"
     pop.innerHTML = `
     <h1>${classification}</h1><br><h2>Your BMI is:${bmi}</h2><br>
-    <button><i class="fa-solid fa-rotate"></i></button>`
+    <button onclick="location.reload()"><i class="fa-solid fa-rotate"></i></button>`
+    container.style.transform = "scale(0)"
 })
 
 function BMIclassList(e){
@@ -28,3 +31,4 @@ function BMIclassList(e){
     }
     return message
 }
+

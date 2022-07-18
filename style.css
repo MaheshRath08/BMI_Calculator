@@ -51,6 +51,8 @@ input{
     background-color: rgb(1, 34, 34);
     color: cyan;
     font-size: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
     transform: scale(0);
 }
 
