@@ -19,6 +19,7 @@ body{
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.2s transform ease-out;
 }
 #btn{
     margin: 1rem;
@@ -47,6 +48,9 @@ input{
     outline: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+input:focus{
+    box-shadow: 0 0 10px lime;
+}
 .result{
     position: absolute;
     width:1000px ;
@@ -57,6 +61,7 @@ input{
     border-radius: 1rem;
     text-align: center;
     transform: scale(0);
+    transition: 0.4s transform ease-in ;
 }
 .result button{
     padding: 1rem 2rem;
