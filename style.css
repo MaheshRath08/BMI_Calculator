@@ -75,3 +75,12 @@ input:focus{
 .result button:hover{
     background-color: rgb(2, 175, 2);
 }
+
+@media (max-width: 480px){
+    input{
+        padding: 0;
+    }
+    .container{
+        width: 100vw;
+    }
+}
