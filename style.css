@@ -18,7 +18,7 @@ body{
     background-color: #dfdfdf;
     padding: 2rem;
     border-radius: 2rem;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px 10px rgba(0,0,0,0.5);
     transition: 0.2s transform ease-out;
 }
 #btn{
