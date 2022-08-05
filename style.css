@@ -8,7 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: mediumslateblue;
+    background-color: rebeccapurple;
 }
 .container{
     display: flex;
@@ -56,7 +56,7 @@ input:focus{
     width:1000px ;
     padding: 2rem;
     background-color: rgb(1, 34, 34);
-    color: cyan;
+    color: rgb(196, 255, 255);
     font-size: 1.5rem;
     border-radius: 1rem;
     text-align: center;
