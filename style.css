@@ -77,11 +77,26 @@ input:focus{
     background-color: rgb(2, 175, 2);
 }
 
+.noti{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: red;
+    color: #dfdfdf;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
 @media (max-width: 480px){
     input{
         padding: 0;
     }
     .container{
         width: 100vw;
+    }
+    .noti{
+        left: 50%;
+        transform: translate(-50%);
     }
 }

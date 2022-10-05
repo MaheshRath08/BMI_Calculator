@@ -11,8 +11,19 @@ btnEl.addEventListener("click", (e)=>{
     let bmi = (w/(h**2)).toFixed(2)
     let classification = BMIclassList(bmi)
     if (isNaN(bmi)){
-        alert("Please type in proper numbers")
-        location.reload()
+        // alert("Please type in proper numbers")
+        // location.reload()
+        weightEl.value = ""
+        heightEl.value = ""
+        let noti = document.createElement("div")
+        document.body.appendChild(noti)
+        noti.classList.add("noti")
+        noti.textContent = "Invalid Input!!!"
+
+        setTimeout(()=>{
+                document.body.removeChild(noti)
+            },2000
+        )
     }else{
         pop.style.transform = "scale(1)"
         pop.innerHTML = `
