@@ -31,6 +31,7 @@ body{
     background-color: rgb(1, 109, 109);
     color:whitesmoke;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 #btn:hover{
     background-color: rgb(8, 141, 97);
@@ -38,18 +39,21 @@ body{
 label{
     font-size: 1.6rem;
     font-weight: bold;
+    color: #3a3939;
 }
 input{
     font-size: 1.6rem;
     margin: 2rem;
     padding: 0.5rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 10px;
     outline: none;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    text-indent: 5%;
+    color: #555;
 }
 input:focus{
-    box-shadow: 0 0 10px 3px lime;
+    box-shadow: 0 1px 7px 1px black;
 }
 .result{
     position: absolute;
@@ -72,6 +76,7 @@ input:focus{
     border-radius: 2rem;
     border: none;
     box-shadow: 0 0 10px 5px black;
+    cursor: pointer;
 }
 .result button:hover{
     background-color: rgb(2, 175, 2);
@@ -85,7 +90,8 @@ input:focus{
     color: #dfdfdf;
     padding: 1rem 3rem;
     border-radius: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px 1px black;
 }
 
 @media (max-width: 480px){
